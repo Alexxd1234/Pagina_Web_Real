@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sin nombre aun</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#000080',
+                            dark: '#78350f',
+
+
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md text-white border-b border-white/10">
+
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider uppercase text-amber-400">Logo o nombre </a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#inicio" class="hover:text-amber-400 transition">Inicio</a>
+                <a href="#hospedaje" class="hover:text-amber-400 transition">Alojamientos</a>
+                <a href="#servicios" class="hover:text-amber-400 transition">Servicios</a>
+                <a href="#ubicacion" class="hover:text-amber-400 transition">Ubicación</a>
+            </nav>
+            <a href="https://wa.me/521XXXXXXXXXX?text=Hola,%20quiero%20información%20de%20reserva" target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition">
+        Reservar
+      </a>
+        </div>
+    </header>
+
+
+    <!--seccion hero-->
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('img/paisaje.png');">
+            <div class="absolute inset-0 bg-slate-950/60"> </div>
+        </div>
+
+        <div class="relative z-10 max-w-3xl space-y-6">
+
+            <span class="text-amber-400 uppercase tracking-widest text-xs font-semibold"> No se que poner xd</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight">Tu refugio en medio de la naturaleza (ficticioo:v) </h1>
+            <p class="text-stone-300 text-lg sm:text-xl">Vive una experiencia única al aire libre con todo el confort y tranquilidad que mereces (Descripcion ficticia ).</p>
+
+            <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#hospedaje" class="bg-amber-600 hover:bg-amber-700 px-6 py-3 rounded-lg font-semibold transition">Ver opciones</a>
+                <a href="#servicios" class="bg-white/10 hover:bg-white/20 border border-white/20 px-6 py-3 rounded-lg font-semibold transition">Conoce el lugar</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion de alojamientos-->
+    <section id="hospedaje" class="py-20 max-w-6xl  mx-auto px-6">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold text-stone-900"> Alojamientos</h2>
+            <p class="text-stone-600 mt-2">Descripcion</p>
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Tarjeta 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-stone-200">
+                <!--img src="https://images.unsplash.com/photo-1470246973918-29a93221c455?q=80&w=800&auto=format&fit=crop" class="w-full h-56 object-cover" alt="Descripcion 1"-->
+                <div class="p-6">
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-bold">Apartado a escribir</h3>
+                        <span class="text-amber-700 font-bold">Asignar precio $<span class="text-xs text-stone-500 font-normal">/ noche o dia</span></span>
+                    </div>
+
+
+                    <p class="text-stone-600 text-sm mb-4">Agregar Descripcion del paquete</p>
+                    <div class="flex gap-4 text-stone-500 text-xs mb-6">
+                        <span class="flex items-center gap-1"><i data-lucide="users" class="w-4 h-4"></i> numero de personas></span>
+                        <span class="flex items-center gap-1"><i data-lucide="wifi" class="w-4 h-4"></i> Agregar Servicios</span>
+                    </div>
+                    <a href="https://wa.me/521XXXXXXXXXX?text=Me%20interesa%20reservar%20el%20Glamping%20Domo" class="block text-center w-full py-2.5 rounded-lg border border-stone-800 text-stone-800 hover:bg-stone-900 hover:text-white font-medium text-sm transition">
+            Consultar Disponibilidad
+          </a>
+                </div>
+
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-stone-200">
+                <!--img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=800&auto=format&fit=crop" class="w-full h-56 object-cover" alt="Cabaña Familiar"-->
+                <div class="p-6">
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-bold">Apartado a escribir</h3>
+                        <span class="text-amber-700 font-bold">Asignar precio $<span class="text-xs text-stone-500 font-normal">/  noche o dia</span></span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-4">Agregar Descripcion del paquete</p>
+                    <div class="flex gap-4 text-stone-500 text-xs mb-6">
+                        <span class="flex items-center gap-1"><i data-lucide="users" class="w-4 h-4"></i> numero de personas</span>
+                        <span class="flex items-center gap-1"><i data-lucide="flame" class="w-4 h-4"></i> Agregar Servicios</span>
+                    </div>
+                    <a href="https://wa.me/521XXXXXXXXXX?text=Me%20interesa%20reservar%20la%20Cabaña%20Rústica" class="block text-center w-full py-2.5 rounded-lg border border-stone-800 text-stone-800 hover:bg-stone-900 hover:text-white font-medium text-sm transition">
+            Consultar Disponibilidad
+          </a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-stone-200">
+                <!--img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=800&auto=format&fit=crop" class="w-full h-56 object-cover" alt="Área de Camping"-->
+                <div class="p-6">
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h3 class="text-xl font-bold">un ejemplo para memorizar</h3>
+                        <span class="text-amber-700 font-bold">$400 <span class="text-xs text-stone-500 font-normal">/ noche</span></span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-4">Lugar designado para instalar tu propia tienda de campaña con acceso a baños y fogateros.</p>
+                    <div class="flex gap-4 text-stone-500 text-xs mb-6">
+                        <span class="flex items-center gap-1"><i data-lucide="tent" class="w-4 h-4"></i> Por carpa</span>
+                        <span class="flex items-center gap-1"><i data-lucide="shield" class="w-4 h-4"></i> Seguridad</span>
+                    </div>
+                    <a href="https://wa.me/521XXXXXXXXXX?text=Me%20interesa%20reservar%20espacio%20de%20Camping" class="block text-center w-full py-2.5 rounded-lg border border-stone-800 text-stone-800 hover:bg-stone-900 hover:text-white font-medium text-sm transition">
+            Consultar Disponibilidad
+          </a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!--Servicios o Amenidades-->
+    <section id="servicios" class="bg-stone-100 py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Servicio Incluidos</h2>
+                <p class="text-stone-600 mt-2">Todo lo necesario para una estancia cómoda y segura</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="bg-white p-6 rounded-xl border border-stone-200 space-y-2">
+                    <i data-lucide="shield-check" class="w-8 h-8 mx-auto text-amber-700"></i>
+                    <h4 class="font-semibold text-stone-900">Descripcion del servicio</h4>
+                    <p class="text-xs text-stone-500">Ejemplo: seguridad</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-stone-200 space-y-2">
+                    <i data-lucide="flame" class="w-8 h-8 mx-auto text-amber-700"></i>
+                    <h4 class="font-semibold text-stone-900">Descripcion</h4>
+                    <p class="text-xs text-stone-500">contenido</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-stone-200 space-y-2">
+                    <i data-lucide="bath" class="w-8 h-8 mx-auto text-amber-700"></i>
+                    <h4 class="font-semibold text-stone-900">Descripcion</h4>
+                    <p class="text-xs text-stone-500">Contenido</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-stone-200 space-y-2">
+                    <i data-lucide="car" class="w-8 h-8 mx-auto text-amber-700"></i>
+                    <h4 class="font-semibold text-stone-900">Descripcion</h4>
+                    <p class="text-xs text-stone-500">Contenido</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Parte de la unbicacion y contacto -->
+    <section id="Ubicación" class="py*20 max-w-6xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font bold">¿Como llegar?</h2>
+            <p class="text-stone-600 mt-2">Te esperamos para vivir tu aventura</p>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-stone 200 shadow-sm h-96">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217361.65969967894!2d-106.60811487816528!3d31.653669760915182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75ecb3d0b329d%3A0xb196100549c7974!2zSnXDoXJleiwgQ2hpaC4!5e0!3m2!1ses-419!2smx!4v1791007825014!5m2!1ses-419!2smx"
+                loading="lazy ">
+        </iframe>
+        </div>
+
+    </section>
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/521XXXXXXXXXX?text=Hola,%20me%20gustaría%20más%20información" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-110">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-stone-400 py-8 text-center text-sm border-t border-stone-800">
+        <p>&copy; 2027 Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
